@@ -9,6 +9,11 @@ For containerization and easy deployment I use Docker. <br/>
 The dataset in use is the Food-101 Dataset but I only use 10 of the foods contained there.
 
 ## Demo
+Before classification<br/>
+<img src='./server/static/img.png' alt='Before' />
+
+After some classifications <br/>
+<img src='./server/static/img2.png' alt='After' />
 
 ## Installation
 - Clone the repository
