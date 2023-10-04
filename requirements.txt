@@ -1,0 +1,5 @@
+fastai
+torch
+torchvision
+Flask
+Flask-Cors
