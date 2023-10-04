@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300italic,700,700italic">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/milligram/1.4.1/milligram.css">
+    <link rel="stylesheet" href="../static/style.css">
+
+    <title>FOOD CLASSIFIER</title>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="row">
+            <h1>FOOD CLASSIFIER</h1>
+        </div>
+        <div class="row">
+            <p>A classifer of 10 types of food. </p>
+        </div>
+        <div >
+            <p class="butto-bomb">Samosa</p>
+            <p class="butto-bomb">Churros</p>
+            <p class="butto-bomb">Sushi</p>
+            <p class="butto-bomb">Tacos</p>
+            <p class="butto-bomb">Pizza</p>
+            <p class="butto-bomb">Tiramisu</p>
+            <p class="butto-bomb">Cheesecake</p>
+            <p class="butto-bomb">Ice_cream</p>
+            <p class="butto-bomb">Donuts</p>
+            <p class="butto-bomb">Pancakes</p>          
+        </div>
+       
+        <div class="row">
+            <h2>Uploader</h2>
+        </div>
+        <div class="row">
+            <img id="uploadedImg">
+        </div>
+
+        <div class="row">
+            <form enctype="multipart/form-data" method="POST" name="fileinfo">
+                <label>Upload your image:</label>
+                <input type="file" name="file" required />
+                <input type="submit" value="Classify!" id="submit-button" />
+                
+            </form>
+    
+        </div>
+        <div class="row">
+   
+            <h2>Results</h2>
+            <div id="loader" class="lds-dual-ring"></div>
+        </div>
+        <div id="results" class="grid-container"> 
+        </div>
+
+    </div>
+
+
+
+<img id="img-left" src="../static/bg.png">
+<img id="img-right" src="../static/bg2.png">
+
+
+
+    <footer>
+        <p>
+            <a class="github-button" href="https://github.com/AminataSANGHO/FoodClassifier" data-show-count="true"
+                aria-label="Follow @sebastian-schuchmann on GitHub">Follow @AminataSANGHO</a>
+
+            <a class="github-button" href="https://github.com/AminataSANGHO/FoodClassifier"
+                data-show-count="true" data-icon="octicon-star"
+                aria-label="Star Sebastian-Schuchmann/ChurrosSamosaClassifier on GitHub">Star</a>
+        </p>
+        
+    </footer>
+
+    <script src="../static/main.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script async defer src="https://buttons.github.io/buttons.js"></script>
+</body>
+
+</html>
