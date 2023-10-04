@@ -18,7 +18,7 @@ The dataset in use is the Food-101 Dataset but I only use 10 of the foods contai
 `cd food-classification-app`
 
 - Install dependencies
-pip install -r requirements.txt
+`pip install -r requirements.txt`
 
 - Launch Docker container
-docker build -t food_classifier . && docker run --rm -it -p 5000:5000 food_classifier
+`docker build -t food_classifier . && docker run --rm -it -p 5000:5000 food_classifier`
